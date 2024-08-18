@@ -20,13 +20,13 @@ st.set_page_config(page_title="Health Assistant",
 # Load models
 working_dir = os.path.dirname(os.path.abspath(__file__))
 diabetes_model = pickle.load(
-    open('C:/Users/anike/OneDrive/Desktop/MLP/trained_model.sav', 'rb'))
+    open('trained_model.sav', 'rb'))
 
 heart_disease_model = pickle.load(
-    open('C:/Users/anike/OneDrive/Desktop/MLP/heart_disease_model.sav', 'rb'))
+    open('heart_disease_model.sav', 'rb'))
 
 parkinsons_model = pickle.load(
-    open('C:/Users/anike/OneDrive/Desktop/MLP/parkinsons_model.sav', 'rb'))
+    open('parkinsons_model.sav', 'rb'))
 
 # Load your data
 df = pd.read_csv("Training.csv")
